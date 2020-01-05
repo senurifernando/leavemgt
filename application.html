@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style> 
+		label{
+			width: 250px;
+			display: inline-block;
+			font-size: 20px;
+		}
+		*{
+			box-sizing: border-box;
+		}
+			[class*="col-"]{
+				float: left;
+				padding: 15px;
+			}
+		/*mobile phone*/
+		[class*="col-"]{
+			width: 100%;
+		}
+	</style>
+		
+	<title>LEAVE REQUEST FORM</title>
+</head>
+<body style="background-color: ghostwhite;"><h1 style="color: darkblue;">
+	<center>
+		Uva Wellassa University of Sri Lanka</center>
+		
+				<img src="logo.png" align="right" style="max-width:100%;height: auto;"></h1>
+	<form align="center" action="leaveaction.php" method="post">
+			<fieldset style="border-color: black;"><table>
+		<label>User ID:  &nbsp;</label><input type="text" name="EmpID"><br><br>
+		<label>Name: &nbsp;</label><input type="text" name="Name"><br><br>
+		<label>Designation:&nbsp;</label><input type="text" name="Designation"><br><br>
+		<label>Department:&nbsp;</label>
+		<select name="Department">
+			<option value="1">Department of Animal Science</option>
+			<option value="2">Department of Export Agriculture</option>
+			<option value="3">Department of Science and Technology</option>
+			<option value="4">Department of Computer Science and Informatics</option>
+			<option value="5">Department of BioSystems Technology</option>
+			<option value="6">Department of Engineering Technology</option>
+			<option value="7">Department of Managemnet Sciences</option>
+			<option value="8">Department of Public Administration</option>
+			<option value="9">Department of English Language Teaching</option>
+		</select>
+		<br><br>
+			<label>Officer Acting:&nbsp;</label><input type="text" name="Officer">
+		<br><br>
+			<label>Officer Acting Email:&nbsp;</label><input type="Email" name="Emailaddress">
+		<br><br>
+			<label>Type of leave &nbsp;</label>
+			<input type="radio" name="type" value="Casual" checked="">Casual
+			<input type="radio" name="type" value="Vacation" checked="">Vacation
+		<br><br>
+			<label>Number of days: &nbsp;</label><input type="text" name="Days">
+		<br><br>
+			<label>Date of commnecing leave:&nbsp;</label><input type="Date" name="start">
+		<br><br>
+			<label>Date of resuming duties:&nbsp;</label><input type="Date" name="resuming">
+		<br><br>
+			<label>Reasons for leave:&nbsp;</label><textarea name="reasons" rows="4"></textarea>
+		<br><br>
+			<label>Address when on leave:&nbsp;</label><textarea name="Address"rows="4"></textarea>
+		<br><br>
+
+		</table>
+		<input type="submit" name="Apply">
+		<input type="reset" name="Cancel">
+			</fieldset>
+	</form>
+</body>
+</html>
