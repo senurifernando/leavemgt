@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/Musharrif/OneDrive/Desktop/test.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style> 
+		label{
+			width: 250px;
+			display: inline-block;
+			font-size: 20px;
+		}
+		*{
+			box-sizing: border-box;
+		}
+			[class*="col-"]{
+				float: left;
+				padding: 15px;
+			}
+		/*mobile phone*/
+		[class*="col-"]{
+			width: 100%;
+		}
+	</style>
+		
+	<title>Login FORM</title>
+</head>
+<body style="background-color: ghostwhite;"><h1 style="color: darkblue;">
+	<center>
+		<img src="logo1.png" alt="University_Logo" align="center" width="300" ;height="300">
+		<br>
+		</center></h1>
+
+	
+		<hr color:black="">
+		<center>
+			<fieldset style="border-color: black;height:450px;width:600px;">
+			<!--	<div>
+					<h4>User Type</h4>
+					<input type="button" value="User">
+					<input type="button" value="Administrator">
+
+				</div> -->
+				<div class="main">
+
+		<form action="dashboard.php" method="POST">
+					<h1>Log In</h1>
+			
+				User Name: <input type="text" name="UName"><br><br>
+				Password: <input type="Password" name="Pword">
+				<br><br>
+				<input type="checkbox">Remember User Name<br>
+				
+				<input type="button" value="Sign Up" onclick="window.location='register.php'"> &nbsp; &nbsp;
+				<input type="Submit" value="Login" >&nbsp; &nbsp;
+				<input type="Reset" value="Clear"><table caption="Login Prompt">
+					<h4 color="red">Forgot Password!&nbsp; &nbsp;
+<input type="button" value="Click Here" onclick="window.location='ResetPassword.html' ">
+				</h4><br><br>
+	
+			
+		</form>
+				
+				
+				 
+					</table>
+				
+			
+		</div="main">
+	</fieldset>
+</center>
+
+</body></html>
